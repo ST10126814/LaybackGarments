@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Join our team</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="just-arrived">Just arrived</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#" class="collaboration-collections">COLLABORATION COLLECTIONS</a></li>
+                     <li><a href="#" class="active">Gifts & Promotions</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="login-register">Login / Register</a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="#" class="wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#" class="profile"><i class="fas fa-user"></i> Profile</a>
+            </div>
+    <main class="order-tracking">
+        <h1>Order Tracking</h1>
+        <p>Enter your order number and email address to track your order status.</p>
+
+        <!-- Form -->
+        <form action="#" method="POST">
+            <label for="order-number">Order Number</label>
+            <input type="text" id="order-number" name="order-number" placeholder="e.g., LB-12345678" required>
+
+            <label for="email-address">Email Address</label>
+            <input type="email" id="email-address" name="email-address" placeholder="your@email.com" required>
+
+            <button type="submit" class="track-order-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.001-.001.002-.001.003-.001a6.5 6.5 0 0 0 6.015-6.016m-1.868 1.869l5.147-5.148a1 1 0 0 1 1.414 0l6.364 6.364a7.5 7.5 0 1 1-10.606 0z"/>
+                </svg>
+                Track Order
+            </button>
+        </form>
+
+        <!-- Help Section -->
+        <section class="help-section">
+            <h3>Need Help?</h3>
+            <p>If you're having trouble tracking your order or have questions about your delivery, our customer service team is here to help.</p>
+            <a href="#" class="contact-link">Contact Customer Service →</a>
+        </section>
+    </main>
+</body>
+</html>

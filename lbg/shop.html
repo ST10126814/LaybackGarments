@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Layback Garments</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js " crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Join our team</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="just-arrived">Just arrived</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#" class="collaboration-collections">COLLABORATION COLLECTIONS</a></li>
+                    <li><a href="#" class="active">Gifts & Promotions</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="wishlist"><i class="fas fa-heart"></i> <span>0</span></a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> <span>0</span></a>
+                <a href="#" class="login-register"><i class="fas fa-user"></i> Login / Register</a>
+            </div>
+            <!-- Search Bar -->
+            <form class="search-bar">
+                <input type="text" placeholder="Search..." required>
+                <select>
+                    <option value="">SELECT CATEGORY</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+
+            <!-- Filters and Products -->
+            <div class="filters-and-products">
+                <!-- Filters -->
+                <aside class="filters">
+                    <h3>Filter by price</h3>
+                    <form>
+                        <label for="price-range">Price:</label>
+                        <input type="range" id="price-range" min="0" max="1800" step="100" value="1800">
+                        <p>Price: R0 — R1,800</p>
+                        <button type="submit" class="filter-button">FILTER</button>
+                    </form>
+
+                    <h3>Filter by color</h3>
+                    <ul class="color-filters">
+                        <li>
+                            <label>
+                                <input type="checkbox" value="beige">
+                                <span class="color-circle beige"></span>
+                                Beige <span class="count">(4)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="black">
+                                <span class="color-circle black"></span>
+                                Black <span class="count">(19)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="blue" checked>
+                                <span class="color-circle blue"></span>
+                                Blue <span class="count">(2)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="brown">
+                                <span class="color-circle brown"></span>
+                                Brown <span class="count">(1)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="green">
+                                <span class="color-circle green"></span>
+                                Green <span class="count">(5)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="grey">
+                                <span class="color-circle grey"></span>
+                                Grey <span class="count">(2)</span>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <h3>Filter by size</h3>
+                    <ul class="size-filters">
+                        <li>
+                            <label>
+                                <input type="checkbox" value="2xl">
+                                2XL <span class="count">(45)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="l">
+                                L <span class="count">(54)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="m">
+                                M <span class="count">(55)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="s">
+                                S <span class="count">(55)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="xl">
+                                XL <span class="count">(55)</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="xs">
+                                XS <span class="count">(20)</span>
+                            </label>
+                        </li>
+                    </ul>
+                </aside>
+
+                <!-- Products -->
+                <section class="products">
+                    <!-- Product Grid Controls -->
+                    <div class="product-grid-controls">
+                        <div class="pagination">
+                            Show: 
+                            <span class="current-page">9</span> /
+                            <span class="total-pages">12</span> /
+                            <span class="items-per-page">18</span> /
+                            <span class="all-items">24</span>
+                        </div>
+                        <div class="view-options">
+                            <button class="grid-view active"><i class="fas fa-th-large"></i></button>
+                            <button class="list-view"><i class="fas fa-list"></i></button>
+                        </div>
+                        <div class="sorting">
+                            <select>
+                                <option value="default">Default sorting</option>
+                                <option value="price-low-to-high">Price: Low to High</option>
+                                <option value="price-high-to-low">Price: High to Low</option>
+                                <option value="name-a-z">Name: A-Z</option>
+                                <option value="name-z-a">Name: Z-A</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Product Grid -->
+                    <div class="product-grid">
+                        <div class="product">
+                            <img src="product1.jpg" alt="Product Image">
+                            <h3>3D AL Crew Neck Top</h3>
+                            <p>TOPS/T SHIRTS</p>
+                            <p>R250.00</p>
+                        </div>
+                        <div class="product">
+                            <img src="product2.jpg" alt="Product Image">
+                            <h3>Baby Sister's Top</h3>
+                            <p>TOPS/T SHIRTS</p>
+                            <p>R250.00</p>
+                        </div>
+                        <div class="product">
+                            <img src="product3.jpg" alt="Product Image">
+                            <h3>Beige Country Box T-Shirt</h3>
+                            <p>TOPS/T SHIRTS</p>
+                            <p>R300.00</p>
+                        </div>
+                        <div class="product">
+                            <img src="product4.jpg" alt="Product Image">
+                            <h3>Beige Country Relaxed Shorts</h3>
+                            <p>LAYBACK BOTTOMS</p>
+                        </div>
+                        <div class="product">
+                            <img src="product5.jpg" alt="Product Image">
+                            <h3>Beige DTMA</h3>
+                            <p>LAYBACK BOTTOMS</p>
+                        </div>
+                        <div class="product">
+                            <img src="product6.jpg" alt="Product Image">
+                            <h3>Beige Layback Society</h3>
+                            <p>TOPS/T SHIRTS</p>
+                            <p>R450.00</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>LAYBACK GARMENTS © 2023 DEVELOPED BY <a href="#">Mercury Tech Solutions</a></p>
+        </div>
+    </footer>
+</body>
+</html>

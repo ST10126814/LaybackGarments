@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Join our team</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="just-arrived">Just arrived</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Stores</a></li>
+                    <li><a href="#" class="collaboration-collections">COLLABORATION COLLECTIONS</a></li>
+                    <li><a href="#" class="active">Gifts & Promotions</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="login-register">Login / Register</a>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="#" class="wishlist"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#" class="profile"><i class="fas fa-user"></i> Profile</a>
+            </div>
+
+    <main class="store-locator">
+        <h1>Store Locator</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search by city, state, or zip code">
+        </div>
+
+        <!-- Store List -->
+        <div class="store-list">
+            <div class="store-item">
+                <h2>LayBack Flagship Store</h2>
+                <p>123 Fashion Avenue, New York, NY 10001</p>
+                <p><i class="fas fa-phone"></i> (212) 555-1234</p>
+                <button class="toggle-details">+</button>
+            </div>
+            <div class="store-item">
+                <h2>LayBack Downtown</h2>
+                <p>456 Style Street, Los Angeles, CA 90012</p>
+                <p><i class="fas fa-phone"></i> (213) 555-6789</p>
+                <button class="toggle-details">+</button>
+            </div>
+            <div class="store-item">
+                <h2>LayBack Fashion Center</h2>
+                <p>789 Trend Boulevard, Chicago, IL 60601</p>
+                <p><i class="fas fa-phone"></i> (312) 555-4321</p>
+                <button class="toggle-details">+</button>
+            </div>
+        </div>
+
+        <!-- Interactive Map -->
+        <div class="map-container">
+            <div class="map-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+            </div>
+            <div class="map-content">
+                <h3>Interactive Map</h3>
+                <p>This is where the interactive map would be displayed, showing store locations.</p>
+                <p>In a real implementation, this would integrate with Google Maps, Mapbox, or another mapping service.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
